@@ -1,4 +1,6 @@
 Formstore::Application.routes.draw do
+  match '/' => 'forms#index'
+  resources :forms
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
